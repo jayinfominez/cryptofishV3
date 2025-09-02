@@ -1,0 +1,7 @@
+package com.infominez.cryptofish.wrapperRequest;
+
+import lombok.Data;
+
+@Data
+public class UserRequest {
+}

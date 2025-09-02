@@ -1,0 +1,838 @@
+[INFO ] 2025-05-05 11:51:26.432 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 60784 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 11:51:26.432 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 60784 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 11:51:26.443 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 11:51:26.443 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 11:51:26.443 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 11:51:26.443 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 11:51:27.719 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 11:51:27.728 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 11:51:27.729 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 11:51:27.820 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 11:51:27.821 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1307 ms
+[DEBUG] 2025-05-05 11:51:27.872 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 11:51:27.872 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 11:51:28.085 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71391b3f, org.springframework.security.web.context.SecurityContextPersistenceFilter@35f8a9d3, org.springframework.security.web.header.HeaderWriterFilter@78411116, org.springframework.security.web.authentication.logout.LogoutFilter@bb095, com.infominez.cryptofish.filter.JwtRequestFilter@328572f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b1e7ad3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56de6d6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cfbeac4, org.springframework.security.web.session.SessionManagementFilter@29314cc9, org.springframework.security.web.access.ExceptionTranslationFilter@6a4d7f76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38548b19]
+[INFO ] 2025-05-05 11:51:28.303 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 11:51:28.314 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.506 seconds (JVM running for 3.723)
+[INFO ] 2025-05-05 11:51:28.314 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.506 seconds (JVM running for 3.723)
+[INFO ] 2025-05-05 11:51:34.701 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 11:51:34.701 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 11:51:34.701 - [FrameworkServlet.java:547] - Completed initialization in 0 ms
+[INFO ] 2025-05-05 11:54:14.576 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 66024 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 11:54:14.576 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 66024 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 11:54:14.580 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 11:54:14.580 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 11:54:14.581 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 11:54:14.581 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 11:54:15.709 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 11:54:15.718 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 11:54:15.718 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 11:54:15.784 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 11:54:15.784 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1138 ms
+[DEBUG] 2025-05-05 11:54:15.819 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 11:54:15.819 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 11:54:16.050 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41aaedaa, org.springframework.security.web.context.SecurityContextPersistenceFilter@62ddd21b, org.springframework.security.web.header.HeaderWriterFilter@5f84abe8, org.springframework.security.web.authentication.logout.LogoutFilter@997d532, com.infominez.cryptofish.filter.JwtRequestFilter@4e406694, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d195ee4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48ea2003, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@303a5119, org.springframework.security.web.session.SessionManagementFilter@6edaa77a, org.springframework.security.web.access.ExceptionTranslationFilter@72209d93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c446b14]
+[INFO ] 2025-05-05 11:54:16.347 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 11:54:16.358 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.415 seconds (JVM running for 3.433)
+[INFO ] 2025-05-05 11:54:16.358 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.415 seconds (JVM running for 3.433)
+[INFO ] 2025-05-05 11:54:21.811 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 11:54:21.811 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 11:54:21.813 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 11:59:01.587 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 64284 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 11:59:01.587 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 64284 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 11:59:01.592 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 11:59:01.592 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 11:59:01.592 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 11:59:01.592 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 11:59:02.701 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 11:59:02.718 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 11:59:02.719 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 11:59:02.799 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 11:59:02.799 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1150 ms
+[DEBUG] 2025-05-05 11:59:02.832 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 11:59:02.832 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 11:59:03.016 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34523d46, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ded7b14, org.springframework.security.web.header.HeaderWriterFilter@102d92c4, org.springframework.security.web.authentication.logout.LogoutFilter@1280851e, com.infominez.cryptofish.filter.JwtRequestFilter@30f4b1a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f84abe8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79767781, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cedfa63, org.springframework.security.web.session.SessionManagementFilter@72209d93, org.springframework.security.web.access.ExceptionTranslationFilter@5ecba515, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30404dba]
+[INFO ] 2025-05-05 11:59:03.262 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 11:59:03.273 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.309 seconds (JVM running for 3.622)
+[INFO ] 2025-05-05 11:59:03.273 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.309 seconds (JVM running for 3.622)
+[INFO ] 2025-05-05 12:07:43.018 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 57488 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:07:43.018 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 57488 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:07:43.022 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:07:43.022 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:07:43.022 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:07:43.022 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:07:44.088 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:07:44.098 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:07:44.099 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:07:44.187 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:07:44.188 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1108 ms
+[DEBUG] 2025-05-05 12:07:44.236 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:07:44.236 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:07:44.413 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d235104, org.springframework.security.web.context.SecurityContextPersistenceFilter@30135202, org.springframework.security.web.header.HeaderWriterFilter@64f555e7, org.springframework.security.web.authentication.logout.LogoutFilter@4fcc0416, com.infominez.cryptofish.filter.JwtRequestFilter@6c2f1700, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10ec523c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6edaa77a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e8e8621, org.springframework.security.web.session.SessionManagementFilter@5f84abe8, org.springframework.security.web.access.ExceptionTranslationFilter@102d92c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11841b15]
+[INFO ] 2025-05-05 12:07:44.697 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:07:44.707 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.272 seconds (JVM running for 3.678)
+[INFO ] 2025-05-05 12:07:44.707 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.272 seconds (JVM running for 3.678)
+[INFO ] 2025-05-05 12:09:49.434 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 66376 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:09:49.434 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 66376 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:09:49.438 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:09:49.438 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:09:49.439 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:09:49.439 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:09:50.493 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:09:50.501 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:09:50.503 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:09:50.566 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:09:50.567 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1071 ms
+[DEBUG] 2025-05-05 12:09:50.598 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:09:50.598 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:09:50.763 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11841b15, org.springframework.security.web.context.SecurityContextPersistenceFilter@44afefd5, org.springframework.security.web.header.HeaderWriterFilter@5ecba515, org.springframework.security.web.authentication.logout.LogoutFilter@6b1e7ad3, com.infominez.cryptofish.filter.JwtRequestFilter@66f66866, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72209d93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30135202, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73877e19, org.springframework.security.web.session.SessionManagementFilter@ff6077, org.springframework.security.web.access.ExceptionTranslationFilter@68809cc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56da52a7]
+[INFO ] 2025-05-05 12:09:51.004 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:09:51.015 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.197 seconds (JVM running for 3.291)
+[INFO ] 2025-05-05 12:09:51.015 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.197 seconds (JVM running for 3.291)
+[INFO ] 2025-05-05 12:09:56.649 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:09:56.650 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:09:56.651 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 12:12:22.118 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 60484 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:12:22.118 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 60484 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:12:22.122 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:12:22.122 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:12:22.122 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:12:22.122 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:12:23.084 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:12:23.092 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:12:23.092 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:12:23.157 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:12:23.157 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 972 ms
+[DEBUG] 2025-05-05 12:12:23.191 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:12:23.191 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:12:23.353 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75b3673, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d195ee4, org.springframework.security.web.header.HeaderWriterFilter@30135202, org.springframework.security.web.authentication.logout.LogoutFilter@6a969fb8, com.infominez.cryptofish.filter.JwtRequestFilter@4f8caaf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21ab988f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63e5e5b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bcb79c2, org.springframework.security.web.session.SessionManagementFilter@62ddd21b, org.springframework.security.web.access.ExceptionTranslationFilter@1ded7b14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4443ef6f]
+[INFO ] 2025-05-05 12:12:23.578 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:12:23.586 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.057 seconds (JVM running for 3.147)
+[INFO ] 2025-05-05 12:12:23.586 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.057 seconds (JVM running for 3.147)
+[INFO ] 2025-05-05 12:12:28.556 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:12:28.557 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:12:28.558 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 12:14:31.707 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 63532 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:14:31.707 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 63532 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:14:31.710 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:14:31.710 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:14:31.711 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:14:31.711 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:14:32.750 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:14:32.760 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:14:32.761 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:14:32.829 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:14:32.829 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1040 ms
+[DEBUG] 2025-05-05 12:14:32.864 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:14:32.864 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:14:33.080 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75b3673, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d195ee4, org.springframework.security.web.header.HeaderWriterFilter@30135202, org.springframework.security.web.authentication.logout.LogoutFilter@6a969fb8, com.infominez.cryptofish.filter.JwtRequestFilter@4f8caaf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21ab988f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63e5e5b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bcb79c2, org.springframework.security.web.session.SessionManagementFilter@62ddd21b, org.springframework.security.web.access.ExceptionTranslationFilter@1ded7b14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4443ef6f]
+[INFO ] 2025-05-05 12:14:33.347 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:14:33.358 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.331 seconds (JVM running for 3.377)
+[INFO ] 2025-05-05 12:14:33.358 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.331 seconds (JVM running for 3.377)
+[INFO ] 2025-05-05 12:17:53.208 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 59612 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:17:53.208 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 59612 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:17:53.213 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:17:53.213 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:17:53.214 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:17:53.214 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:17:54.278 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:17:54.287 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:17:54.287 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:17:54.354 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:17:54.354 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1070 ms
+[DEBUG] 2025-05-05 12:17:54.392 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:17:54.392 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:17:54.566 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af356f, org.springframework.security.web.context.SecurityContextPersistenceFilter@53dfacba, org.springframework.security.web.header.HeaderWriterFilter@abbc908, org.springframework.security.web.authentication.logout.LogoutFilter@5b5c0057, com.infominez.cryptofish.filter.JwtRequestFilter@721eb7df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78411116, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16c3ca31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4443ef6f, org.springframework.security.web.session.SessionManagementFilter@6a4d7f76, org.springframework.security.web.access.ExceptionTranslationFilter@18324f97, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bfc257]
+[INFO ] 2025-05-05 12:17:54.826 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:17:54.833 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.29 seconds (JVM running for 3.419)
+[INFO ] 2025-05-05 12:17:54.833 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.29 seconds (JVM running for 3.419)
+[INFO ] 2025-05-05 12:18:00.817 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:18:00.818 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:18:00.819 - [FrameworkServlet.java:547] - Completed initialization in 0 ms
+[INFO ] 2025-05-05 12:18:59.634 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 56892 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:18:59.634 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 56892 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:18:59.638 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:18:59.638 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:18:59.640 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:18:59.640 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:19:00.648 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:19:00.655 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:19:00.656 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:19:00.721 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:19:00.723 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1016 ms
+[DEBUG] 2025-05-05 12:19:00.757 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:19:00.757 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:19:00.978 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4443ef6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@79767781, org.springframework.security.web.header.HeaderWriterFilter@44afefd5, org.springframework.security.web.authentication.logout.LogoutFilter@749f539e, com.infominez.cryptofish.filter.JwtRequestFilter@1ea9f009, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aced190, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d195ee4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e46d648, org.springframework.security.web.session.SessionManagementFilter@10ec523c, org.springframework.security.web.access.ExceptionTranslationFilter@64f555e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34523d46]
+[INFO ] 2025-05-05 12:19:01.233 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:19:01.245 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.196 seconds (JVM running for 3.264)
+[INFO ] 2025-05-05 12:19:01.245 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.196 seconds (JVM running for 3.264)
+[INFO ] 2025-05-05 12:19:18.260 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:19:18.260 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:19:18.262 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 12:20:55.278 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65616 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:20:55.278 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65616 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:20:55.283 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:20:55.283 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:20:55.284 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:20:55.284 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:20:56.842 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:20:56.856 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:20:56.857 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:20:56.971 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:20:56.972 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1622 ms
+[DEBUG] 2025-05-05 12:20:57.038 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:20:57.038 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[WARN ] 2025-05-05 12:20:57.065 - [AbstractApplicationContext.java:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'appProperties': Could not bind properties to 'AppProperties' : prefix=jwt, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'jwt.auth.token-expiration-msec' to long
+[INFO ] 2025-05-05 12:20:57.071 - [DirectJDKLog.java:173] - Stopping service [Tomcat]
+[INFO ] 2025-05-05 12:20:57.085 - [ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2025-05-05 12:20:57.111 - [LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'jwt.auth.token-expiration-msec' to long:
+
+    Property: jwt.auth.token-expiration-msec
+    Value: 3600000  # 1 hour in milliseconds
+    Origin: class path resource [application.properties] - 5:30
+    Reason: failed to convert java.lang.String to long (caused by java.lang.NumberFormatException: For input string: "3600000#1hourinmilliseconds")
+
+Action:
+
+Update your application's configuration
+
+[INFO ] 2025-05-05 12:21:10.426 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 19676 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:21:10.426 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 19676 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:21:10.431 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:21:10.431 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:21:10.432 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:21:10.432 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:21:11.420 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:21:11.428 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:21:11.429 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:21:11.497 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:21:11.498 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1011 ms
+[DEBUG] 2025-05-05 12:21:11.534 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:21:11.534 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[WARN ] 2025-05-05 12:21:11.546 - [AbstractApplicationContext.java:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'appProperties': Could not bind properties to 'AppProperties' : prefix=jwt, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'jwt.auth.token-expiration-msec' to long
+[INFO ] 2025-05-05 12:21:11.548 - [DirectJDKLog.java:173] - Stopping service [Tomcat]
+[INFO ] 2025-05-05 12:21:11.558 - [ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2025-05-05 12:21:11.571 - [LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'jwt.auth.token-expiration-msec' to long:
+
+    Property: jwt.auth.token-expiration-msec
+    Value: 3600000  # 1 hour in milliseconds
+    Origin: class path resource [application.properties] - 5:30
+    Reason: failed to convert java.lang.String to long (caused by java.lang.NumberFormatException: For input string: "3600000#1hourinmilliseconds")
+
+Action:
+
+Update your application's configuration
+
+[INFO ] 2025-05-05 12:22:14.490 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65852 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:22:14.490 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65852 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:22:14.494 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:22:14.494 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:22:14.495 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:22:14.495 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:22:15.477 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:22:15.486 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:22:15.486 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:22:15.551 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:22:15.553 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 997 ms
+[DEBUG] 2025-05-05 12:22:15.590 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:22:15.590 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:22:15.750 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7068f7ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@6edaa77a, org.springframework.security.web.header.HeaderWriterFilter@1ded7b14, org.springframework.security.web.authentication.logout.LogoutFilter@6075b2d3, com.infominez.cryptofish.filter.JwtRequestFilter@4c7a078, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62ddd21b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e38d975, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38548b19, org.springframework.security.web.session.SessionManagementFilter@aced190, org.springframework.security.web.access.ExceptionTranslationFilter@44afefd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d235104]
+[INFO ] 2025-05-05 12:22:15.998 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:22:16.007 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.131 seconds (JVM running for 3.171)
+[INFO ] 2025-05-05 12:22:16.007 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.131 seconds (JVM running for 3.171)
+[INFO ] 2025-05-05 12:22:24.519 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:22:24.520 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:22:24.521 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[DEBUG] 2025-05-05 12:22:24.555 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:22:24.555 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:22:24.557 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:22:24.557 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:22:41.567 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:22:41.567 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:22:41.568 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:22:41.568 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[INFO ] 2025-05-05 12:29:06.550 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65016 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:29:06.550 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65016 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:29:06.554 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:29:06.554 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:29:06.555 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:29:06.555 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:29:07.606 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:29:07.615 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:29:07.616 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:29:07.681 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:29:07.682 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1057 ms
+[DEBUG] 2025-05-05 12:29:07.719 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:29:07.719 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:29:07.887 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c446b14, org.springframework.security.web.context.SecurityContextPersistenceFilter@10ec523c, org.springframework.security.web.header.HeaderWriterFilter@ff6077, org.springframework.security.web.authentication.logout.LogoutFilter@1473b8c0, com.infominez.cryptofish.filter.JwtRequestFilter@5298dead, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79767781, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62ddd21b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3af356f, org.springframework.security.web.session.SessionManagementFilter@30135202, org.springframework.security.web.access.ExceptionTranslationFilter@60723d6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b208b45]
+[INFO ] 2025-05-05 12:29:08.142 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:29:08.153 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.201 seconds (JVM running for 3.323)
+[INFO ] 2025-05-05 12:29:08.153 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.201 seconds (JVM running for 3.323)
+[INFO ] 2025-05-05 12:29:11.884 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:29:11.884 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:29:11.885 - [FrameworkServlet.java:547] - Completed initialization in 0 ms
+[INFO ] 2025-05-05 12:30:47.148 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 63008 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:30:47.148 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 63008 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:30:47.152 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:30:47.152 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:30:47.153 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:30:47.153 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:30:48.606 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:30:48.621 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:30:48.622 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:30:48.708 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:30:48.709 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1496 ms
+[DEBUG] 2025-05-05 12:30:48.764 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:30:48.764 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:30:48.949 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7068f7ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@6edaa77a, org.springframework.security.web.header.HeaderWriterFilter@1ded7b14, org.springframework.security.web.authentication.logout.LogoutFilter@6075b2d3, com.infominez.cryptofish.filter.JwtRequestFilter@4f8caaf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62ddd21b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e38d975, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38548b19, org.springframework.security.web.session.SessionManagementFilter@aced190, org.springframework.security.web.access.ExceptionTranslationFilter@44afefd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d235104]
+[INFO ] 2025-05-05 12:30:49.243 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:30:49.251 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.742 seconds (JVM running for 3.84)
+[INFO ] 2025-05-05 12:30:49.251 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.742 seconds (JVM running for 3.84)
+[INFO ] 2025-05-05 12:30:56.382 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:30:56.383 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:30:56.384 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 12:34:10.642 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65256 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:34:10.642 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65256 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:34:10.647 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:34:10.647 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:34:10.647 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:34:10.647 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:34:11.659 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:34:11.668 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:34:11.669 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:34:11.734 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:34:11.735 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1027 ms
+[DEBUG] 2025-05-05 12:34:11.770 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:34:11.770 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:34:11.940 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af356f, org.springframework.security.web.context.SecurityContextPersistenceFilter@53dfacba, org.springframework.security.web.header.HeaderWriterFilter@abbc908, org.springframework.security.web.authentication.logout.LogoutFilter@5b5c0057, com.infominez.cryptofish.filter.JwtRequestFilter@553f3b6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78411116, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16c3ca31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4443ef6f, org.springframework.security.web.session.SessionManagementFilter@6a4d7f76, org.springframework.security.web.access.ExceptionTranslationFilter@18324f97, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bfc257]
+[INFO ] 2025-05-05 12:34:12.186 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:34:12.194 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.207 seconds (JVM running for 3.404)
+[INFO ] 2025-05-05 12:34:12.194 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.207 seconds (JVM running for 3.404)
+[INFO ] 2025-05-05 12:34:19.596 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:34:19.596 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:34:19.597 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[WARN ] 2025-05-05 12:34:19.933 - [JwtUtil.java:53] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:34:19.933 - [JwtUtil.java:53] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:34:42.512 - [JwtUtil.java:53] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:34:42.512 - [JwtUtil.java:53] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[INFO ] 2025-05-05 12:37:30.864 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 30852 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:37:30.864 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 30852 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:37:30.867 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:37:30.867 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:37:30.868 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:37:30.868 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:37:31.878 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:37:31.887 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:37:31.887 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:37:31.951 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:37:31.951 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1028 ms
+[DEBUG] 2025-05-05 12:37:31.988 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:37:31.988 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:37:32.157 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bcb79c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d6aca33, org.springframework.security.web.header.HeaderWriterFilter@6a4d7f76, org.springframework.security.web.authentication.logout.LogoutFilter@7a18e8d, com.infominez.cryptofish.filter.JwtRequestFilter@6b530eb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29314cc9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13a37e2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d1a10ac, org.springframework.security.web.session.SessionManagementFilter@16c3ca31, org.springframework.security.web.access.ExceptionTranslationFilter@29be7749, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e46d648]
+[INFO ] 2025-05-05 12:37:32.386 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:37:32.396 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.154 seconds (JVM running for 3.32)
+[INFO ] 2025-05-05 12:37:32.396 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.154 seconds (JVM running for 3.32)
+[INFO ] 2025-05-05 12:37:38.448 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:37:38.448 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:37:38.449 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[WARN ] 2025-05-05 12:37:38.787 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:37:38.787 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:37:49.676 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:37:49.676 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[DEBUG] 2025-05-05 12:37:52.453 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:37:52.453 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:37:52.453 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:37:52.453 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[WARN ] 2025-05-05 12:38:13.851 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:38:13.851 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:38:30.602 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:38:30.602 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[INFO ] 2025-05-05 12:44:05.465 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 62540 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:44:05.465 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 62540 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:44:05.469 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:44:05.469 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:44:05.469 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:44:05.469 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:44:06.497 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:44:06.506 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:44:06.506 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:44:06.567 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:44:06.567 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1039 ms
+[DEBUG] 2025-05-05 12:44:06.603 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:44:06.603 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:44:06.761 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7068f7ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@6edaa77a, org.springframework.security.web.header.HeaderWriterFilter@1ded7b14, org.springframework.security.web.authentication.logout.LogoutFilter@6075b2d3, com.infominez.cryptofish.filter.JwtRequestFilter@4f8caaf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62ddd21b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e38d975, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38548b19, org.springframework.security.web.session.SessionManagementFilter@aced190, org.springframework.security.web.access.ExceptionTranslationFilter@44afefd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d235104]
+[INFO ] 2025-05-05 12:44:06.995 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:44:07.005 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.149 seconds (JVM running for 3.196)
+[INFO ] 2025-05-05 12:44:07.005 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.149 seconds (JVM running for 3.196)
+[INFO ] 2025-05-05 12:44:10.797 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:44:10.798 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:44:10.799 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[WARN ] 2025-05-05 12:44:11.140 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:11.140 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:28.279 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:28.279 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:35.333 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:35.333 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:40.783 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:44:40.783 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[DEBUG] 2025-05-05 12:44:46.978 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:44:46.978 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:44:46.978 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:44:46.978 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[WARN ] 2025-05-05 12:45:57.881 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[WARN ] 2025-05-05 12:45:57.881 - [JwtUtil.java:57] - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[INFO ] 2025-05-05 12:55:41.218 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 59848 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 12:55:41.218 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 59848 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 12:55:41.223 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 12:55:41.223 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 12:55:41.224 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:55:41.224 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 12:55:42.370 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 12:55:42.378 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 12:55:42.379 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 12:55:42.443 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 12:55:42.444 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1147 ms
+[DEBUG] 2025-05-05 12:55:42.481 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 12:55:42.481 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 12:55:42.691 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e83c18, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f84abe8, org.springframework.security.web.header.HeaderWriterFilter@60723d6a, org.springframework.security.web.authentication.logout.LogoutFilter@56de6d6b, com.infominez.cryptofish.filter.JwtRequestFilter@669d2b1b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30135202, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aced190, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@783efb48, org.springframework.security.web.session.SessionManagementFilter@1ded7b14, org.springframework.security.web.access.ExceptionTranslationFilter@2abc224d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c0884e8]
+[INFO ] 2025-05-05 12:55:42.921 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 12:55:42.931 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.383 seconds (JVM running for 3.487)
+[INFO ] 2025-05-05 12:55:42.931 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.383 seconds (JVM running for 3.487)
+[INFO ] 2025-05-05 12:55:49.382 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:55:49.383 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 12:55:49.384 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[DEBUG] 2025-05-05 12:55:58.144 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:55:58.144 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:55:58.145 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:55:58.145 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:56:48.485 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:56:48.485 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:56:48.485 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:56:48.485 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:56:54.965 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:56:54.965 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 12:56:54.966 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 12:56:54.966 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[INFO ] 2025-05-05 13:05:04.107 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 44340 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:05:04.107 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 44340 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:05:04.110 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:05:04.110 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:05:04.110 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:05:04.110 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:05:05.076 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:05:05.084 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:05:05.084 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:05:05.146 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:05:05.146 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 976 ms
+[DEBUG] 2025-05-05 13:05:05.180 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:05:05.180 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:05:05.341 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d1a10ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@21ab988f, org.springframework.security.web.header.HeaderWriterFilter@10ec523c, org.springframework.security.web.authentication.logout.LogoutFilter@3028e50e, com.infominez.cryptofish.filter.JwtRequestFilter@328572f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e38d975, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a50ae65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fca2a8f, org.springframework.security.web.session.SessionManagementFilter@2d195ee4, org.springframework.security.web.access.ExceptionTranslationFilter@5f84abe8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51751e5f]
+[INFO ] 2025-05-05 13:05:05.577 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:05:05.585 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.104 seconds (JVM running for 3.136)
+[INFO ] 2025-05-05 13:05:05.585 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.104 seconds (JVM running for 3.136)
+[INFO ] 2025-05-05 13:07:08.272 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:07:08.273 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:07:08.274 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:09:57.942 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 41896 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:09:57.942 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 41896 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:09:57.945 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:09:57.945 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:09:57.946 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:09:57.946 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:09:58.979 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:09:58.988 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:09:58.988 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:09:59.096 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:09:59.097 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1108 ms
+[DEBUG] 2025-05-05 13:09:59.152 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:09:59.152 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:09:59.442 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e8e8621, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a4d7f76, org.springframework.security.web.header.HeaderWriterFilter@71178a52, org.springframework.security.web.authentication.logout.LogoutFilter@31e32ea2, com.infominez.cryptofish.filter.JwtRequestFilter@553f3b6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53dfacba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e63d216, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c446b14, org.springframework.security.web.session.SessionManagementFilter@4650a407, org.springframework.security.web.access.ExceptionTranslationFilter@2b97cc1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73877e19]
+[INFO ] 2025-05-05 13:09:59.820 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:09:59.835 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.44 seconds (JVM running for 3.658)
+[INFO ] 2025-05-05 13:09:59.835 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.44 seconds (JVM running for 3.658)
+[INFO ] 2025-05-05 13:10:03.390 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:10:03.391 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:10:03.392 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:11:42.833 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 63412 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:11:42.833 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 63412 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:11:42.836 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:11:42.836 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:11:42.836 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:11:42.836 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:11:43.817 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:11:43.826 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:11:43.826 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:11:43.889 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:11:43.889 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 994 ms
+[DEBUG] 2025-05-05 13:11:43.927 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:11:43.927 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:11:44.081 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4443ef6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@79767781, org.springframework.security.web.header.HeaderWriterFilter@44afefd5, org.springframework.security.web.authentication.logout.LogoutFilter@749f539e, com.infominez.cryptofish.filter.JwtRequestFilter@5ab9b447, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aced190, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d195ee4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e46d648, org.springframework.security.web.session.SessionManagementFilter@10ec523c, org.springframework.security.web.access.ExceptionTranslationFilter@64f555e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34523d46]
+[INFO ] 2025-05-05 13:11:44.312 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:11:44.322 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.122 seconds (JVM running for 3.198)
+[INFO ] 2025-05-05 13:11:44.322 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.122 seconds (JVM running for 3.198)
+[INFO ] 2025-05-05 13:11:49.749 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:11:49.750 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:11:49.751 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:12:25.710 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65072 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:12:25.710 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 65072 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:12:25.714 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:12:25.714 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:12:25.715 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:12:25.715 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:12:26.856 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:12:26.869 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:12:26.870 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:12:26.975 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:12:26.975 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1203 ms
+[DEBUG] 2025-05-05 13:12:27.022 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:12:27.022 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:12:27.204 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e8e8621, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a4d7f76, org.springframework.security.web.header.HeaderWriterFilter@71178a52, org.springframework.security.web.authentication.logout.LogoutFilter@31e32ea2, com.infominez.cryptofish.filter.JwtRequestFilter@553f3b6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53dfacba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e63d216, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c446b14, org.springframework.security.web.session.SessionManagementFilter@4650a407, org.springframework.security.web.access.ExceptionTranslationFilter@2b97cc1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73877e19]
+[INFO ] 2025-05-05 13:12:27.482 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:12:27.490 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.464 seconds (JVM running for 3.672)
+[INFO ] 2025-05-05 13:12:27.490 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.464 seconds (JVM running for 3.672)
+[INFO ] 2025-05-05 13:14:06.751 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 672 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:14:06.751 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 672 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:14:06.755 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:14:06.755 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:14:06.756 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:14:06.756 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:14:07.797 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:14:07.805 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:14:07.805 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:14:07.867 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:14:07.867 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1043 ms
+[DEBUG] 2025-05-05 13:14:07.903 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:14:07.903 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:14:08.190 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ce45a7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@997d532, org.springframework.security.web.header.HeaderWriterFilter@551de37d, org.springframework.web.filter.CorsFilter@153d4abb, org.springframework.security.web.authentication.logout.LogoutFilter@53093491, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a969fb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@777c350f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d4c273c, org.springframework.security.web.session.SessionManagementFilter@6075b2d3, org.springframework.security.web.access.ExceptionTranslationFilter@1473b8c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e6dad8]
+[INFO ] 2025-05-05 13:14:08.304 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:14:08.312 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.204 seconds (JVM running for 3.245)
+[INFO ] 2025-05-05 13:14:08.312 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.204 seconds (JVM running for 3.245)
+[INFO ] 2025-05-05 13:14:11.663 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:14:11.664 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:14:11.665 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:15:55.576 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 62560 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:15:55.576 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 62560 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:15:55.579 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:15:55.579 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:15:55.579 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:15:55.579 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:15:56.632 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:15:56.642 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:15:56.642 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:15:56.710 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:15:56.710 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1068 ms
+[DEBUG] 2025-05-05 13:15:56.746 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:15:56.746 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:15:56.909 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38548b19, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e63d216, org.springframework.security.web.header.HeaderWriterFilter@29be7749, org.springframework.security.web.authentication.logout.LogoutFilter@33abde31, com.infominez.cryptofish.filter.JwtRequestFilter@6bb7cce7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16c3ca31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35f8a9d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41aaedaa, org.springframework.security.web.session.SessionManagementFilter@245a060f, org.springframework.security.web.access.ExceptionTranslationFilter@9a7a808, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e8e8621]
+[INFO ] 2025-05-05 13:15:57.133 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:15:57.144 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.188 seconds (JVM running for 3.353)
+[INFO ] 2025-05-05 13:15:57.144 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.188 seconds (JVM running for 3.353)
+[INFO ] 2025-05-05 13:16:00.364 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:16:00.365 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:16:00.366 - [FrameworkServlet.java:547] - Completed initialization in 0 ms
+[DEBUG] 2025-05-05 13:16:00.399 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:16:00.399 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:16:00.401 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:16:00.401 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:18:06.595 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:18:06.595 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:18:06.596 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:18:06.596 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:18:14.330 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:18:14.330 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:18:14.330 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:18:14.330 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[INFO ] 2025-05-05 13:23:06.600 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 54784 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:23:06.600 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 54784 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:23:06.604 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:23:06.604 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:23:06.604 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:23:06.604 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:23:07.607 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:23:07.616 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:23:07.616 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:23:07.682 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:23:07.682 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1021 ms
+[DEBUG] 2025-05-05 13:23:07.719 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:23:07.719 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:23:07.887 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@231baf51, org.springframework.security.web.context.SecurityContextPersistenceFilter@abbc908, org.springframework.security.web.header.HeaderWriterFilter@3241713e, org.springframework.security.web.authentication.logout.LogoutFilter@48ea2003, com.infominez.cryptofish.filter.JwtRequestFilter@3e1162e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9a7a808, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4650a407, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11841b15, org.springframework.security.web.session.SessionManagementFilter@71178a52, org.springframework.security.web.access.ExceptionTranslationFilter@50825a02, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30b2b76f]
+[INFO ] 2025-05-05 13:23:08.176 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:23:08.186 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.204 seconds (JVM running for 3.381)
+[INFO ] 2025-05-05 13:23:08.186 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.204 seconds (JVM running for 3.381)
+[INFO ] 2025-05-05 13:23:16.018 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:23:16.019 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:23:16.020 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:23:40.590 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 47972 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:23:40.590 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 47972 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:23:40.594 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:23:40.594 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:23:40.595 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:23:40.595 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:23:41.588 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:23:41.596 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:23:41.597 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:23:41.664 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:23:41.664 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1002 ms
+[DEBUG] 2025-05-05 13:23:41.705 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:23:41.705 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:23:41.861 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c446b14, org.springframework.security.web.context.SecurityContextPersistenceFilter@10ec523c, org.springframework.security.web.header.HeaderWriterFilter@ff6077, org.springframework.security.web.authentication.logout.LogoutFilter@1473b8c0, com.infominez.cryptofish.filter.JwtRequestFilter@4c7a078, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79767781, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62ddd21b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3af356f, org.springframework.security.web.session.SessionManagementFilter@30135202, org.springframework.security.web.access.ExceptionTranslationFilter@60723d6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b208b45]
+[INFO ] 2025-05-05 13:23:42.092 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:23:42.102 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.179 seconds (JVM running for 3.293)
+[INFO ] 2025-05-05 13:23:42.102 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.179 seconds (JVM running for 3.293)
+[INFO ] 2025-05-05 13:23:43.826 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:23:43.827 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:23:43.828 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:24:06.516 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 64428 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:24:06.516 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 64428 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:24:06.519 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:24:06.519 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:24:06.519 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:24:06.519 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:24:07.535 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:24:07.544 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:24:07.544 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:24:07.611 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:24:07.611 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1034 ms
+[DEBUG] 2025-05-05 13:24:07.648 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:24:07.648 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:24:07.808 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34523d46, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ded7b14, org.springframework.security.web.header.HeaderWriterFilter@102d92c4, org.springframework.security.web.authentication.logout.LogoutFilter@1280851e, com.infominez.cryptofish.filter.JwtRequestFilter@669d2b1b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f84abe8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79767781, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cedfa63, org.springframework.security.web.session.SessionManagementFilter@72209d93, org.springframework.security.web.access.ExceptionTranslationFilter@5ecba515, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30404dba]
+[INFO ] 2025-05-05 13:24:08.038 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:24:08.048 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.124 seconds (JVM running for 3.338)
+[INFO ] 2025-05-05 13:24:08.048 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.124 seconds (JVM running for 3.338)
+[INFO ] 2025-05-05 13:24:09.638 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:24:09.638 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:24:09.640 - [FrameworkServlet.java:547] - Completed initialization in 2 ms
+[DEBUG] 2025-05-05 13:24:09.676 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:24:09.676 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:24:09.677 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:24:09.677 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[INFO ] 2025-05-05 13:26:54.004 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 66884 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:26:54.004 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 66884 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:26:54.007 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:26:54.007 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:26:54.007 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:26:54.007 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:26:55.126 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:26:55.139 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:26:55.140 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:26:55.208 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:26:55.209 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1145 ms
+[DEBUG] 2025-05-05 13:26:55.244 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:26:55.244 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:26:55.406 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bfc257, org.springframework.security.web.context.SecurityContextPersistenceFilter@2687f956, org.springframework.security.web.header.HeaderWriterFilter@13cd7ea5, org.springframework.security.web.authentication.logout.LogoutFilter@a50ae65, com.infominez.cryptofish.filter.JwtRequestFilter@38600b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29be7749, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53dfacba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34523d46, org.springframework.security.web.session.SessionManagementFilter@9a7a808, org.springframework.security.web.access.ExceptionTranslationFilter@3241713e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@340b7ef6]
+[INFO ] 2025-05-05 13:26:55.677 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:26:55.686 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.341 seconds (JVM running for 3.541)
+[INFO ] 2025-05-05 13:26:55.686 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.341 seconds (JVM running for 3.541)
+[INFO ] 2025-05-05 13:27:01.612 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:27:01.612 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:27:01.613 - [FrameworkServlet.java:547] - Completed initialization in 0 ms
+[INFO ] 2025-05-05 13:27:01.624 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:01.624 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:03.724 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:03.724 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:06.537 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:06.537 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:09.513 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:09.513 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:10.692 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:10.692 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:16.101 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:16.101 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:19.498 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:27:19.498 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:28:46.416 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 47264 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:28:46.416 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 47264 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:28:46.419 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:28:46.419 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:28:46.420 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:28:46.420 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:28:47.423 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:28:47.432 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:28:47.432 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:28:47.499 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:28:47.500 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1017 ms
+[DEBUG] 2025-05-05 13:28:47.537 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:28:47.537 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:28:47.698 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38548b19, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e63d216, org.springframework.security.web.header.HeaderWriterFilter@29be7749, org.springframework.security.web.authentication.logout.LogoutFilter@33abde31, com.infominez.cryptofish.filter.JwtRequestFilter@6bb7cce7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16c3ca31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35f8a9d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41aaedaa, org.springframework.security.web.session.SessionManagementFilter@245a060f, org.springframework.security.web.access.ExceptionTranslationFilter@9a7a808, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e8e8621]
+[INFO ] 2025-05-05 13:28:47.930 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:28:47.939 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.155 seconds (JVM running for 3.337)
+[INFO ] 2025-05-05 13:28:47.939 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.155 seconds (JVM running for 3.337)
+[INFO ] 2025-05-05 13:28:52.513 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:28:52.514 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:28:52.515 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:28:52.525 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:28:52.525 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:28:56.490 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:28:56.490 - [JwtRequestFilter.java:52] - Authorization header is missing or invalid
+[INFO ] 2025-05-05 13:33:30.925 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 62796 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:33:30.925 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 62796 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:33:30.928 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:33:30.928 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:33:30.929 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:33:30.929 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:33:32.081 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:33:32.091 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:33:32.092 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:33:32.158 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:33:32.158 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1172 ms
+[DEBUG] 2025-05-05 13:33:32.193 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:33:32.193 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:33:32.369 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c446b14, org.springframework.security.web.context.SecurityContextPersistenceFilter@10ec523c, org.springframework.security.web.header.HeaderWriterFilter@ff6077, org.springframework.security.web.authentication.logout.LogoutFilter@1473b8c0, com.infominez.cryptofish.filter.JwtRequestFilter@4c7a078, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79767781, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62ddd21b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3af356f, org.springframework.security.web.session.SessionManagementFilter@30135202, org.springframework.security.web.access.ExceptionTranslationFilter@60723d6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b208b45]
+[INFO ] 2025-05-05 13:33:32.622 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:33:32.631 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.339 seconds (JVM running for 3.468)
+[INFO ] 2025-05-05 13:33:32.631 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.339 seconds (JVM running for 3.468)
+[INFO ] 2025-05-05 13:33:38.540 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:33:38.540 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:33:38.541 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[DEBUG] 2025-05-05 13:33:38.583 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:33:38.583 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:33:38.584 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:33:38.584 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:33:46.536 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:33:46.536 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:33:46.536 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:33:46.536 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:34:49.888 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:34:49.888 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:34:49.889 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:34:49.889 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[INFO ] 2025-05-05 13:36:58.670 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 59964 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:36:58.670 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 59964 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:36:58.673 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:36:58.673 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:36:58.674 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:36:58.674 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:36:59.714 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:36:59.722 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:36:59.723 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:36:59.786 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:36:59.786 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1055 ms
+[DEBUG] 2025-05-05 13:36:59.823 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:36:59.823 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:36:59.980 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51751e5f, org.springframework.security.web.context.SecurityContextPersistenceFilter@aced190, org.springframework.security.web.header.HeaderWriterFilter@72209d93, org.springframework.security.web.authentication.logout.LogoutFilter@551de37d, com.infominez.cryptofish.filter.JwtRequestFilter@4f8caaf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6edaa77a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21ab988f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b0b4d53, org.springframework.security.web.session.SessionManagementFilter@79767781, org.springframework.security.web.access.ExceptionTranslationFilter@ff6077, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e83c18]
+[INFO ] 2025-05-05 13:37:00.226 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:37:00.234 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.24 seconds (JVM running for 3.293)
+[INFO ] 2025-05-05 13:37:00.234 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.24 seconds (JVM running for 3.293)
+[INFO ] 2025-05-05 13:37:05.062 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:37:05.062 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:37:05.063 - [FrameworkServlet.java:547] - Completed initialization in 0 ms
+[INFO ] 2025-05-05 13:43:38.847 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 64444 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:43:38.847 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 64444 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:43:38.851 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:43:38.851 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:43:38.851 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:43:38.851 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:43:39.830 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:43:39.838 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:43:39.840 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:43:39.905 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:43:39.906 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 998 ms
+[DEBUG] 2025-05-05 13:43:39.947 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:43:39.947 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:43:40.124 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b208b45, org.springframework.security.web.context.SecurityContextPersistenceFilter@72209d93, org.springframework.security.web.header.HeaderWriterFilter@2abc224d, org.springframework.security.web.authentication.logout.LogoutFilter@13a37e2a, com.infominez.cryptofish.filter.JwtRequestFilter@350b3a17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ded7b14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10ec523c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bfc257, org.springframework.security.web.session.SessionManagementFilter@44afefd5, org.springframework.security.web.access.ExceptionTranslationFilter@7051777c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11a7ba62]
+[INFO ] 2025-05-05 13:43:40.388 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:43:40.398 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.192 seconds (JVM running for 3.224)
+[INFO ] 2025-05-05 13:43:40.398 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.192 seconds (JVM running for 3.224)
+[INFO ] 2025-05-05 13:43:43.944 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:43:43.945 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:43:43.947 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:45:10.068 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 68012 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:45:10.068 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 68012 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:45:10.071 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:45:10.071 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:45:10.071 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:45:10.071 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:45:12.069 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:45:12.084 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:45:12.084 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:45:12.208 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:45:12.209 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 2071 ms
+[DEBUG] 2025-05-05 13:45:12.288 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:45:12.288 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:45:13.245 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b3315a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b5c0057, org.springframework.security.web.header.HeaderWriterFilter@5972d253, org.springframework.web.filter.CorsFilter@8ed9cf, org.springframework.security.web.authentication.logout.LogoutFilter@76911385, com.infominez.cryptofish.filter.JwtRequestFilter@76f10035, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ca1f591, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@273842a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f72203, org.springframework.security.web.session.SessionManagementFilter@31e32ea2, org.springframework.security.web.access.ExceptionTranslationFilter@a50ae65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fc3e1a4]
+[INFO ] 2025-05-05 13:45:13.387 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:45:13.395 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 3.954 seconds (JVM running for 5.212)
+[INFO ] 2025-05-05 13:45:13.395 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 3.954 seconds (JVM running for 5.212)
+[INFO ] 2025-05-05 13:45:50.774 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:45:50.775 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:45:50.776 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[INFO ] 2025-05-05 13:50:03.206 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 67696 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:50:03.206 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 67696 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:50:03.210 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:50:03.210 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:50:03.211 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:50:03.211 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:50:04.215 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:50:04.223 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:50:04.223 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:50:04.287 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:50:04.287 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1009 ms
+[DEBUG] 2025-05-05 13:50:04.326 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:50:04.326 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:50:04.608 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ce45a7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@997d532, org.springframework.security.web.header.HeaderWriterFilter@551de37d, org.springframework.web.filter.CorsFilter@153d4abb, org.springframework.security.web.authentication.logout.LogoutFilter@53093491, com.infominez.cryptofish.filter.JwtRequestFilter@328572f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a969fb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@777c350f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d4c273c, org.springframework.security.web.session.SessionManagementFilter@6075b2d3, org.springframework.security.web.access.ExceptionTranslationFilter@1473b8c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e6dad8]
+[INFO ] 2025-05-05 13:50:04.733 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:50:04.743 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.16 seconds (JVM running for 3.196)
+[INFO ] 2025-05-05 13:50:04.743 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.16 seconds (JVM running for 3.196)
+[INFO ] 2025-05-05 13:50:08.100 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:50:08.101 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:50:08.102 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[DEBUG] 2025-05-05 13:50:10.862 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:50:10.862 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:50:10.863 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:50:10.863 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:50:21.537 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:50:21.537 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:50:21.538 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:50:21.538 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[INFO ] 2025-05-05 13:52:25.276 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 67908 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[INFO ] 2025-05-05 13:52:25.276 - [StartupInfoLogger.java:55] - Starting CryptofishApplication using Java 1.8.0_402 on DESKTOP-OCDPGF8 with PID 67908 (D:\projects\cryptofish_web\target\classes started by LENOVO in D:\projects\cryptofish_web)
+[DEBUG] 2025-05-05 13:52:25.279 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[DEBUG] 2025-05-05 13:52:25.279 - [StartupInfoLogger.java:56] - Running with Spring Boot v2.6.2, Spring v5.3.14
+[INFO ] 2025-05-05 13:52:25.279 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:52:25.279 - [SpringApplication.java:639] - The following profiles are active: dev
+[INFO ] 2025-05-05 13:52:26.319 - [TomcatWebServer.java:108] - Tomcat initialized with port(s): 6901 (http)
+[INFO ] 2025-05-05 13:52:26.328 - [DirectJDKLog.java:173] - Starting service [Tomcat]
+[INFO ] 2025-05-05 13:52:26.329 - [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 2025-05-05 13:52:26.395 - [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-05-05 13:52:26.395 - [ServletWebServerApplicationContext.java:290] - Root WebApplicationContext: initialization completed in 1060 ms
+[DEBUG] 2025-05-05 13:52:26.432 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[DEBUG] 2025-05-05 13:52:26.432 - [GenericFilterBean.java:242] - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2025-05-05 13:52:26.593 - [DefaultSecurityFilterChain.java:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cedfa63, org.springframework.security.web.context.SecurityContextPersistenceFilter@29be7749, org.springframework.security.web.header.HeaderWriterFilter@2b97cc1f, org.springframework.security.web.authentication.logout.LogoutFilter@5e840abf, com.infominez.cryptofish.filter.JwtRequestFilter@5d52e3ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4650a407, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78411116, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e83c18, org.springframework.security.web.session.SessionManagementFilter@2687f956, org.springframework.security.web.access.ExceptionTranslationFilter@512d4583, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6050462a]
+[INFO ] 2025-05-05 13:52:26.820 - [TomcatWebServer.java:220] - Tomcat started on port(s): 6901 (http) with context path ''
+[INFO ] 2025-05-05 13:52:26.830 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.157 seconds (JVM running for 3.2)
+[INFO ] 2025-05-05 13:52:26.830 - [StartupInfoLogger.java:61] - Started CryptofishApplication in 2.157 seconds (JVM running for 3.2)
+[INFO ] 2025-05-05 13:54:01.412 - [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:54:01.412 - [FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2025-05-05 13:54:01.413 - [FrameworkServlet.java:547] - Completed initialization in 1 ms
+[DEBUG] 2025-05-05 13:54:01.445 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:54:01.445 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:54:01.447 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:54:01.447 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:54:39.997 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:54:39.997 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:54:39.997 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:54:39.997 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:54:45.697 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:54:45.697 - [TokenProvider.java:32] - Token Secret: YourVerySecretKeyForJWTSigning
+[DEBUG] 2025-05-05 13:54:45.698 - [TokenProvider.java:33] - Token Expiration Time: 3600000
+[DEBUG] 2025-05-05 13:54:45.698 - [TokenProvider.java:33] - Token Expiration Time: 3600000

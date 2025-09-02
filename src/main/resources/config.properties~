@@ -3,12 +3,12 @@ app.json=D:\\infominez\\outsource\\reflections\\metadata\\json
 app.image=D:\\infominez\\outsource\\reflections\\metadata\\image
 app.serverURL=http://localhost:6060/api/public/image/
 app.server=http://reflectionsnft.io/metadata2/
-scrap.contractAddress=0x9Ef31ce8cca614E7aFf3c1b883740E8d2728Fe91
+scrap.contractAddress=0x5fFf521Cf177782BF21d4B03F20aa616573Eb8dd
 #PROD
 scrap.apiScrapUrl=https://api.etherscan.io/api?module=logs&action=getLogs
 
 #DEV
-scrap.apiUrl=https://api.etherscan.io/api?module=
+scrap.apiUrl=https://api-sepolia.etherscan.io/api?module=
 scrap.apiKey=U5DWT2J32KCVI8FYTVEDGPESV75M7V98TM
 
 

@@ -1,0 +1,4 @@
+package com.infominez.cryptofish.security;
+
+public class JwtTokenService {
+}

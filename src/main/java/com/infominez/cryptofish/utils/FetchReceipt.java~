@@ -1,0 +1,24 @@
+package com.infominez.cryptofish.utils;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class FetchReceipt {
+    public static void main(String[] args) throws Exception {
+        HttpClient client = HttpClient.newHttpClient();
+
+        String txnHash = "0x2f68972e763fda28d5e0cf69259256df13a8287f74bc670130e163db85c2cc9a";
+        String json = "{ \"jsonrpc\":\"2.0\", \"method\":\"eth_getTransactionReceipt\", \"params\": [\"" + txnHash + "\"], \"id\":1 }";
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("https://ethereum-holesky.publicnode.com"))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(json))
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        System.out.println(response.body());
+    }
+}

@@ -1,0 +1,4 @@
+package com.infominez.cryptofish.utils;
+
+public class JwtAuthenticationEntryPoint {
+}

@@ -1,0 +1,341 @@
+package com.infominez.cryptofish.controller;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.infominez.cryptofish.base.BaseResponse;
+import com.infominez.cryptofish.utils.AppConfiguration;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.http.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
+import org.web3j.utils.Numeric;
+import java.nio.charset.StandardCharsets;
+
+import java.io.File;
+import java.math.BigInteger;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
+@RestController
+@RequestMapping("/cryptofishV2")
+@AllArgsConstructor
+@Slf4j
+public class CryptofishV2Controller {
+
+    // =========================================
+    // 👉 CONFIGURABLE CONSTANTS
+    // =========================================
+    private static final String ETHEREUM_RPC_URL = "https://ethereum.publicnode.com";
+//    private static final String JSON_SAVE_DIR = "/home/imz/var/workspace/cryptofish/metadata/";
+    private static final String JSON_SAVE_DIR = "/var/www/crypto_fish/metadata/";
+//    private static final String IMAGE_SAVE_DIR = "/home/imz/var/workspace/cryptofish/metadata2/";
+    private static final String IMAGE_SAVE_DIR = "/var/www/crypto_fish/metadata2/";
+
+    private static final String expectedContractAddress = "0x9Ef31ce8cca614E7aFf3c1b883740E8d2728Fe91"; // TODO need to change it to mainnet
+//    private static final String expectedContractAddress = "0x192e84c74ba9a64204125cb6091c5152bca19871";
+
+//    private static final String JSON_SAVE_DIR = "D:/cryptofish/generated-json/";
+//      private static final String IMAGE_SAVE_DIR = "D:/cryptofish/source-image/";
+    private static final String IMAGE_BASE_URL = "https://cryptofish.us/metadata2/";
+//    private static final String IMAGE_BASE_URL = "https://cryptofish.us/metadata2/";
+    private static final int MAX_RETRIES = 5;
+    private static final int RETRY_DELAY_MS = 5000;
+
+    private final AppConfiguration appConfiguration;
+    private final Map<String, List<BigInteger>> txnCache = new ConcurrentHashMap<>();
+
+    /**
+     * Endpoint to upload Cryptofish metadata and image.
+     * Validates transaction hash, extracts token numbers, saves JSON metadata & image.
+     */
+    @PostMapping("/cryptofish")
+    public BaseResponse uploadCryptofish(
+            @RequestParam(value = "token_number", required = true) String tokenNumber,
+            @RequestParam(value = "txn_hash", required = true) String txnHash,
+            @RequestPart(value = "image", required = true) MultipartFile image,
+            @RequestParam(value = "genera", required = false) String genus,
+            @RequestParam(value = "species", required = false) String species,
+            @RequestParam(value = "locality", required = false) String locality,
+            @RequestParam(value = "conservation_status", required = false) String conservationStatus,
+            @RequestParam(value = "variant", required = false) String variant,
+            @RequestParam(value = "color_morph", required = false) String colorMorph,
+            @RequestParam(value = "type", required = false) String custom,
+            @RequestParam(value = "honorary", required = false) String honorary
+    ) {
+        log.info("Received upload request: tokenNumber={}, txnHash={}", tokenNumber, txnHash);
+
+        BaseResponse baseResponse = new BaseResponse();
+        List<BigInteger> revealTokens = new ArrayList<>();
+
+        try {
+
+            // ✅ Check if image is null or empty
+            if (image == null || image.isEmpty()) {
+                log.error("Uploaded image is null or empty");
+                return baseResponse.set(400, "Image file is required and cannot be empty");
+            }
+
+
+            // =========================================
+            // 1️⃣ Check if txnHash already cached
+            // =========================================
+            if (txnCache.containsKey(txnHash)) {
+                log.info("Cache hit for txn_hash: {}", txnHash);
+                revealTokens = txnCache.get(txnHash);
+            } else {
+                // =========================================
+                // 2️⃣ Fetch transaction receipt from Ethereum node
+                // =========================================
+                String jsonRpcPayload = String.format(
+                        "{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\":[\"%s\"],\"id\":1}",
+                        txnHash
+                );
+
+                HttpHeaders headers = new HttpHeaders();
+                headers.setContentType(MediaType.APPLICATION_JSON);
+                headers.set("User-Agent", "Mozilla/5.0 (compatible; CryptofishApp/1.0)");
+
+                HttpEntity<String> requestEntity = new HttpEntity<>(jsonRpcPayload, headers);
+                RestTemplate restTemplate = new RestTemplate();
+
+                log.info("Calling Ethereum RPC at {}", ETHEREUM_RPC_URL);
+                ResponseEntity<String> rpcResponse = restTemplate.exchange(ETHEREUM_RPC_URL, HttpMethod.POST, requestEntity, String.class);
+
+                String tempResult = rpcResponse.getBody();
+                JSONObject responseJson = new JSONObject(tempResult);
+
+                // Retry loop if receipt is not ready
+                int retries = 0;
+                while ((!responseJson.has("result") || responseJson.isNull("result")) && retries < MAX_RETRIES) {
+                    log.warn("Transaction receipt not ready. Retrying {}/{}", retries + 1, MAX_RETRIES);
+                    Thread.sleep(RETRY_DELAY_MS);
+
+                    rpcResponse = restTemplate.exchange(ETHEREUM_RPC_URL, HttpMethod.POST, requestEntity, String.class);
+                    tempResult = rpcResponse.getBody();
+                    responseJson = new JSONObject(tempResult);
+                    retries++;
+                }
+
+                JSONObject resultJson = responseJson.optJSONObject("result");
+                if (resultJson == null || resultJson.isEmpty()) {
+                    log.error("Transaction receipt unavailable after {} retries", retries);
+                    return baseResponse.set(400, "Transaction receipt unavailable after retries");
+                }
+
+                String receivedTxnHash = resultJson.optString("transactionHash");
+                String status = resultJson.optString("status");
+
+                // =========================================
+                // Validate txn hash and status
+                // =========================================
+                if (!txnHash.equalsIgnoreCase(receivedTxnHash)) {
+                    log.error("Transaction hash mismatch: expected={}, received={}", txnHash, receivedTxnHash);
+                    return baseResponse.set(400, "Transaction hash validation failed");
+                }
+
+                if ("0x1".equals(status)) {
+                    log.info("Transaction SUCCESS");
+                } else if ("0x0".equals(status)) {
+                    log.error("Transaction FAILED on blockchain");
+                    return baseResponse.set(400, "Transaction failed on blockchain");
+                } else {
+                    log.warn("Transaction unknown status: {}", status);
+                    return baseResponse.set(400, "Transaction not completed");
+                }
+
+                JSONArray logsArray = resultJson.optJSONArray("logs");
+                if (logsArray == null || logsArray.isEmpty()) {
+                    log.error("No logs found in transaction receipt");
+                    return baseResponse.set(400, "No logs found in transaction receipt");
+                }
+
+                // =========================================
+                // Extract token numbers from logs
+                // =========================================
+                for (int i = 0; i < logsArray.length(); i++) {
+                    JSONObject logObj = logsArray.getJSONObject(i);
+
+                    String logAddress = logObj.optString("address");
+                    if (!expectedContractAddress.equalsIgnoreCase(logAddress)) {
+                        log.error("Requested token {} not found in transaction logs/cache", tokenNumber);
+                        continue;
+                    }
+
+
+                    JSONArray topics = logObj.optJSONArray("topics");
+                    if (topics != null && topics.length() > 3) {
+                        try {
+                            String tokenHex = topics.optString(3);
+                            log.info("Extracted token hex: {}", tokenHex);
+                            BigInteger tokenTemp = Numeric.toBigInt(tokenHex);
+                            log.info("Parsed token: {}", tokenTemp);
+                            revealTokens.add(tokenTemp);
+                        } catch (Exception e) {
+                            log.error("Error parsing token from log[{}]: {}", i, e.getMessage(), e);
+                        }
+                    } else {
+                        log.warn("Insufficient topics in log[{}]: {}", i, topics);
+                    }
+                }
+
+                if (revealTokens.isEmpty()) {
+                    log.error("No valid tokens found in logs");
+                    return baseResponse.set(400, "No valid tokens found in transaction logs");
+                }
+
+                txnCache.put(txnHash, revealTokens);
+                log.info("Cached txn_hash={} with tokens={}", txnHash, revealTokens);
+            }
+
+            // =========================================
+            // 3️⃣ Check if requested token is in transaction logs
+            // =========================================
+            BigInteger requestedToken = new BigInteger(tokenNumber);
+            if (!revealTokens.contains(requestedToken)) {
+                log.error("Requested token {} not found in transaction logs/cache", requestedToken);
+                return baseResponse.set(400, "Requested token not found in transaction logs");
+            }
+
+            // =========================================
+            // 4️⃣ Create metadata JSON
+            // =========================================
+            Map<String, Object> jsonMap = new LinkedHashMap<>();
+            jsonMap.put("image", IMAGE_BASE_URL + tokenNumber + ".png");
+
+            List<Map<String, String>> attributes = new ArrayList<>();
+            addAttribute(attributes, "Genera", genus);
+            addAttribute(attributes, "Species", species);
+            addAttribute(attributes, "Locality", locality);
+            addAttribute(attributes, "Conservation Status", conservationStatus);
+            addAttribute(attributes, "Variant", variant);
+            addAttribute(attributes, "Color Morph", colorMorph);
+            addAttribute(attributes, "Type", custom);
+            addAttribute(attributes, "Honorary", honorary);
+            jsonMap.put("attributes", attributes);
+
+            ObjectMapper objectMapper = new ObjectMapper();
+            String json = objectMapper.writeValueAsString(jsonMap);
+
+            // Save JSON file
+//            String jsonFilePath = JSON_SAVE_DIR + tokenNumber + ".json";
+//            Path jsonPath = Paths.get(jsonFilePath);
+////            Files.write(jsonPath, json.getBytes());
+//            Files.write(jsonPath, json.getBytes(StandardCharsets.UTF_8));
+//            log.info("Saved JSON at: {}", jsonFilePath);
+//
+//            // =========================================
+//            // 5️⃣ Save uploaded image
+//            // =========================================
+//            String imageFilePath = IMAGE_SAVE_DIR + tokenNumber + ".png";
+//            Path imagePath = Paths.get(imageFilePath);
+//            Files.copy(image.getInputStream(), imagePath, StandardCopyOption.REPLACE_EXISTING);
+//            log.info("Saved image at: {}", imagePath);
+            Path jsonPath = Paths.get(JSON_SAVE_DIR, tokenNumber + ".json");
+            if (!Files.exists(jsonPath.getParent())) {
+                Files.createDirectories(jsonPath.getParent());
+            }
+            Files.write(jsonPath, json.getBytes(StandardCharsets.UTF_8));
+            log.info("Saved JSON at: {}", jsonPath.toString());
+
+            Path imagePath = Paths.get(IMAGE_SAVE_DIR, tokenNumber + ".png");
+            if (!Files.exists(imagePath.getParent())) {
+                Files.createDirectories(imagePath.getParent());
+            }
+            Files.copy(image.getInputStream(), imagePath, StandardCopyOption.REPLACE_EXISTING);
+            log.info("Saved image at: {}", imagePath.toString());
+
+            // ✅ Success response
+            return baseResponse.set(200, "Revealed Token : "+tokenNumber+ " ");
+        } catch (Exception e) {
+            log.error("Unhandled error: {}", e.getMessage(), e);
+            return baseResponse.setInternalServerError();
+        }
+    }
+
+    /**
+     * Helper to add non-empty attributes to JSON metadata.
+     */
+    private void addAttribute(List<Map<String, String>> attributes, String traitType, String value) {
+        if (value != null && !value.trim().isEmpty()) {
+            Map<String, String> attribute = new LinkedHashMap<>();
+            attribute.put("trait_type", traitType);
+            attribute.put("value", value);
+            attributes.add(attribute);
+        } else {
+            log.info("Skipping attribute '{}': empty/null value", traitType);
+        }
+    }
+
+    /*
+    * for dummy data
+    *
+    * */
+//    @PostMapping("/cryptofish/generate-dummy")
+//    public BaseResponse generateDummyCryptofishData(
+//            @RequestPart(value = "image", required = true) MultipartFile image,
+//            @RequestParam(value = "genus", required = false) String genus,
+//            @RequestParam(value = "species", required = false) String species,
+//            @RequestParam(value = "locality", required = false) String locality,
+//            @RequestParam(value = "conservation_status", required = false) String conservationStatus,
+//            @RequestParam(value = "variant", required = false) String variant,
+//            @RequestParam(value = "color_morph", required = false) String colorMorph,
+//            @RequestParam(value = "custom", required = false) String custom
+//    ) {
+//        BaseResponse baseResponse = new BaseResponse();
+//
+//        try {
+//            ObjectMapper objectMapper = new ObjectMapper();
+//
+//            for (int tokenNum = 101; tokenNum <= 300; tokenNum++) {
+//                String tokenNumber = String.valueOf(tokenNum);
+//
+//                // Build metadata JSON
+//                Map<String, Object> jsonMap = new LinkedHashMap<>();
+//                jsonMap.put("image", IMAGE_BASE_URL + tokenNumber + ".png");
+//
+//                List<Map<String, String>> attributes = new ArrayList<>();
+//                addAttribute(attributes, "Genus", genus);
+//                addAttribute(attributes, "Species", species);
+//                addAttribute(attributes, "Locality", locality);
+//                addAttribute(attributes, "Conservation Status", conservationStatus);
+//                addAttribute(attributes, "Variant", variant);
+//                addAttribute(attributes, "Color Morph", colorMorph);
+//                addAttribute(attributes, "Custom", custom);
+//                jsonMap.put("attributes", attributes);
+//
+//                String json = objectMapper.writeValueAsString(jsonMap);
+//
+//                // Save JSON
+//                Path jsonPath = Paths.get(JSON_SAVE_DIR, tokenNumber + ".json");
+//                if (!Files.exists(jsonPath.getParent())) {
+//                    Files.createDirectories(jsonPath.getParent());
+//                }
+//                Files.write(jsonPath, json.getBytes(StandardCharsets.UTF_8));
+//                log.info("Saved JSON at: {}", jsonPath.toString());
+//
+//                // Save image
+//                Path imagePath = Paths.get(IMAGE_SAVE_DIR, tokenNumber + ".png");
+//                if (!Files.exists(imagePath.getParent())) {
+//                    Files.createDirectories(imagePath.getParent());
+//                }
+//                Files.copy(image.getInputStream(), imagePath, StandardCopyOption.REPLACE_EXISTING);
+//                log.info("Saved image at: {}", imagePath.toString());
+//            }
+//
+//            return baseResponse.set(200, "Dummy data generated for tokens 1 to 100");
+//
+//        } catch (Exception e) {
+//            log.error("Error generating dummy data: {}", e.getMessage(), e);
+//            return baseResponse.setInternalServerError();
+//        }
+//    }
+
+
+}

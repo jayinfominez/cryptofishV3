@@ -8,7 +8,7 @@
         <include resource="org/springframework/boot/logging/logback/base.xml"/>
         <appender name="all"
                   class="ch.qos.logback.core.rolling.RollingFileAppender">
-            <file>${LOGS}/cryptofish.log</file>
+			<file>${user.dir}/logs/cryptofish/cryptofish.log</file>
             <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
                 <Pattern>
                     <!--                [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n-->
@@ -17,7 +17,7 @@
             </encoder>
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
                 <!-- rollover daily -->
-                <fileNamePattern>${LOGS}/cryptofish.%d{yyyy-MM-dd}.log.zip
+				<fileNamePattern>${user.dir}/logs/cryptofish/cryptofish.%d{yyyy-MM-dd}.log.zip
                 </fileNamePattern>
                 <maxHistory>1200</maxHistory>
             </rollingPolicy>

@@ -1,0 +1,4 @@
+package com.infominez.cryptofish.config;
+
+public class AuthenticationFilter {
+}

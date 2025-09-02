@@ -3,6 +3,4 @@ server.port=6901
 spring.profiles.active=dev
 jwt.auth.tokenSecret=YourVerySecretKeyForJWTSigning
 jwt.auth.tokenExpirationMsec=3600000
-spring.servlet.multipart.max-file-size=50MB
-spring.servlet.multipart.max-request-size=50MB
 

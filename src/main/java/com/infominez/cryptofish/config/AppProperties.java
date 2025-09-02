@@ -1,0 +1,76 @@
+package com.infominez.cryptofish.config;
+
+
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Configuration
+@ConfigurationProperties(prefix = "jwt")
+@PropertySource("/config.properties")
+public class AppProperties {
+    private final Auth auth = new Auth();
+    private final OAuth2 oauth2 = new OAuth2();
+
+    // Getters and setters
+    @Getter
+    @Setter
+    private String secret;
+
+    public static class Auth {
+        private String tokenSecret;
+        private long tokenExpirationMsec;
+
+        public String getTokenSecret() {
+            return tokenSecret;
+        }
+
+        public void setTokenSecret(String tokenSecret) {
+            this.tokenSecret = tokenSecret;
+        }
+
+        public long getTokenExpirationMsec() {
+            return tokenExpirationMsec;
+        }
+
+        public void setTokenExpirationMsec(long tokenExpirationMsec) {
+            this.tokenExpirationMsec = tokenExpirationMsec;
+        }
+    }
+
+    public static final class OAuth2 {
+        private List<String> authorizedRedirectUris = new ArrayList<>();
+
+        public List<String> getAuthorizedRedirectUris() {
+            return authorizedRedirectUris;
+        }
+
+        public OAuth2 authorizedRedirectUris(List<String> authorizedRedirectUris) {
+            this.authorizedRedirectUris = authorizedRedirectUris;
+            return this;
+        }
+    }
+
+    public Auth getAuth() {
+        return auth;
+    }
+
+    public OAuth2 getOauth2() {
+        return oauth2;
+    }
+
+    @Autowired
+    private Environment env;
+
+    public String getProperty(String propertyName) {
+        return env.getProperty(propertyName);
+    }
+}
+
