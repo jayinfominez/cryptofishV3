@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@author Ayush Partani
+@Modified By Sanjay
+-->
+<configuration>
+    <springProfile name="dev">
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+        <appender name="all"
+                  class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOGS}/cryptofish.log</file>
+            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                <Pattern>
+                    <!--                [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n-->
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} - [%F:%L] - %msg%n
+                </Pattern>
+            </encoder>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <!-- rollover daily -->
+                <fileNamePattern>${LOGS}/cryptofish.%d{yyyy-MM-dd}.log.zip
+                </fileNamePattern>
+                <maxHistory>1200</maxHistory>
+            </rollingPolicy>
+        </appender>
+        <logger name="com.infominez" level="DEBUG"
+                additivity="true">
+            <appender-ref ref="all"/>
+        </logger>
+        <root>
+            <level value="INFO"/>
+            <appender-ref ref="all"/>
+        </root>
+    </springProfile>
+</configuration>
+
